@@ -113,9 +113,9 @@ def isAnagram(s,t):
     l = all_char2[:]
 
     if k == l:
-        print ('true')
+        return True
     else:
-        print ('false')
+        return False
         
 
 isAnagram(s,t)
