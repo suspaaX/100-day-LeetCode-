@@ -70,8 +70,7 @@ def missingNumber(nums):
             result.append(elem)
    
         for el in result:
-            print(el)
-            # return el
+            return el
         
     elif len(nums)>=2:
         (nums.sort())
@@ -84,7 +83,7 @@ def missingNumber(nums):
         x = set(num2)-set(nums)
         
         for k in x:
-                return k
+            return k
 
 print(((missingNumber(nums))))
 

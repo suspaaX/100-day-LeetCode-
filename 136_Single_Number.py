@@ -16,7 +16,7 @@ Output: 1
 
 Example 2:
 
-# Input: nums = [4,1,2,1,2]
+Input: nums = [4,1,2,1,2]
 
 Output: 4
 
@@ -35,32 +35,26 @@ Output: 1
 
 # Output: 1
 
-nums = [1]
+# nums = [1]
 
 # Output: 1
 
 
-nums = [4,1,2,1,2]
+# nums = [4,1,2,1,2]
 # Output: 4
 
-def singleNumber(nums):
-    all_elem = {}
-    for i in nums:
-        elem = nums.count(i)
-        all_elem.update({i:elem})
-        key = all_elem.keys()
-        val = all_elem.values()
-    # print(key,val)
-    if val in val is 1:
-        print(val.keys())
+# def singleNumber(nums):
 
-    # for i in key:
-    #     print(key[0])
-        # if k == 1:
-        #     print(k.keys())
+#     all_elem = {}
+#     for i in nums:
+#         elem = nums.count(i)
+#         all_elem.update({i:elem})
+#         key = all_elem.keys()
+#         val = all_elem.values()
+
+#     print(all_elem)
 
 
 
 
-
-singleNumber(nums)          
+# singleNumber(nums)          
