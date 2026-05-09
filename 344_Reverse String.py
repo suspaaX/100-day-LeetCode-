@@ -28,7 +28,7 @@ Output =  ["h","a","n","n","a","H"]
 
 def reverseString(s):
     s.reverse()
-    print(s)
+    return s
 
 
 reverseString(s)
