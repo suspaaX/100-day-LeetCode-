@@ -51,5 +51,26 @@ def searchInsert(nums,target) :
 
     return x
 
-
 print((searchInsert(nums,target)))
+
+'''soution 2
+
+def searchInsert(nums,target) :
+# lst = []
+# for i in nums:
+
+#     if i == target:
+#         x = (nums.index(i))
+#         lst.append(x)
+
+#     else:
+#         if  target not in nums:
+#             nums.append(target)
+#             nums.sort()
+#             for k in nums:
+#                 x = (nums.index(target))
+#                 lst.append(x)
+
+
+# return lst[0]
+'''
