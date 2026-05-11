@@ -28,33 +28,34 @@ Output: 1
 
 '''
 
+nums = [2,2,1]
 
 
-# nums = [2,2,1]
-
-
-# Output: 1
+Output: 1
 
 # nums = [1]
 
 # Output: 1
 
 
-# nums = [4,1,2,1,2]
-# Output: 4
+nums = [4,1,2,1,2]
+Output: 4
 
-# def singleNumber(nums):
+def singleNumber(nums):
 
-#     all_elem = {}
-#     for i in nums:
-#         elem = nums.count(i)
-#         all_elem.update({i:elem})
-#         key = all_elem.keys()
-#         val = all_elem.values()
+    all_elem = {}
+    for i in nums:
+        elem = nums.count(i)
+        all_elem.update({i:elem})
 
-#     print(all_elem)
+    for key in all_elem:
+        k = all_elem.get(key)
+        if k == 1:
+            print(all_elem.keys)
 
 
 
 
-# singleNumber(nums)          
+
+
+print(singleNumber(nums))          

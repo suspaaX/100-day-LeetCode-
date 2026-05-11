@@ -28,8 +28,6 @@ nums2 = [9,4,9,8,4]
 Output =  [9,4]
 
 def intersection(nums1,nums2):
-
-
     result = set(nums1).intersection(set(nums2))
     lst = list(result)
     return lst
