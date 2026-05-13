@@ -1,36 +1,69 @@
 '''
-q1.
+
+1. Two Sum
+
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
 
 Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
 Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 
 '''
-nums  = [2,7,11,15]
-target = 9
-Output = [0,1]
+# nums  = [2,7,11,15]
+# target = 9
+# Output = [0,1]
 
-# nums = [3,2,4]
-# target = 6
-# Output =  [1,2]
+nums = [3,2,4]
+target = 6
+Output =  [1,2]
 
 # nums = [3,3]
 # target  = 6
 # Output = [0,1]
 
 def twoSum(nums,target) :
-    nw_lst = []
+    new_num = []
+    
+    tar = 0
     for i in nums:
-        if i<target:
-            nw_lst.append(i)
-
-    idx = []
-    total_sum = sum(nw_lst)
-    if total_sum == target:
-        for i in nw_lst:
-            x = nw_lst.index(i)
-            idx.append(x)
-    print(idx)
+        if i < target :
+            new_num.append(i)
+            
+            new_val = []
+            for i in range(len(new_num)-1):
+                new_val.append(i)
+            print(new_val)
 
 
-# twoSum(nums,target)
+
+
+
+    # result = []           
+    # for i,k in enumerate(new_num):
+    #     result.append(i)
+    # return result
+
+
+            
+
+    
+    # result = []
+    # # if sum(new_num) == target:
+    # for k in new_num:
+    #     idx = new_num.(k)
+    #     print(idx)
+    #     result.append(idx)
+    # print(result)
+
+
+    
+    
+    # # return (result)
+
+
+
+print(twoSum(nums,target))
