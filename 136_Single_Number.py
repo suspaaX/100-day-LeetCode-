@@ -22,40 +22,41 @@ Output: 4
 
 Example 3:
 
-Input: nums = [1]
+# Input: nums = [1]
 
-Output: 1
+# Output: 1
 
 '''
+
+# nums = [1]
+
+# Output: 1
 
 nums = [2,2,1]
 
 
 Output: 1
 
-# nums = [1]
-
-# Output: 1
 
 
-nums = [4,1,2,1,2]
-Output: 4
+# nums = [4,1,2,1,2]
+# Output: 4
+
 
 def singleNumber(nums):
-
-    all_elem = {}
+    dict1 = {}
     for i in nums:
-        elem = nums.count(i)
-        all_elem.update({i:elem})
+        x = nums.count(i)
+        dict1.update({i:x})
 
-    for key in all_elem:
-        k = all_elem.get(key)
-        if k == 1:
-            print(all_elem.keys)
-
+    for k in dict1:
+        if dict1.get(k) == 1:
+            return k
 
 
 
 
+print(singleNumber(nums))      
 
-print(singleNumber(nums))          
+
+

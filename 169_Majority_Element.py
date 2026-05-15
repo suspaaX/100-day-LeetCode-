@@ -26,15 +26,20 @@ Output: 2
 nums = [2,2,1,1,1,2,2]
 Output =  2
 
+# nums = [2,4,4,3]
+# Output = 3
+
+
 
 def majorityElement(nums) :
     my_dict = {}
     for i in nums:
         x = nums.count(i)
         my_dict.update({i:x})
-    # print(my_dict)
-    max_key  = max(my_dict, key = my_dict.get)
-    print(max_key)
 
+    print(my_dict)
+    # majority = max(my_dict,key=my_dict.get)
+    # return (majority)
+ 
 
-majorityElement(nums) 
+print(majorityElement(nums))

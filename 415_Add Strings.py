@@ -26,10 +26,8 @@ Output: "533"
 
 
 def addStrings(num1, num2):
-    x =  sum(num1,num2)
-    print(x)
-
-    return (str(sum))
+    
 
 
-# print(addStrings(num1, num2))       
+
+print(addStrings(num1, num2))       

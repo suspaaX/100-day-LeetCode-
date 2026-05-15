@@ -24,7 +24,61 @@
 #     print(i)
 
 
-nums = [1,2,3,4]
+# nums = [1,2,3,4]
 
-for i in range(len(nums)-1):
-    print(nums[i:i+2])
+# for i in range(len(nums)-1):
+#     print(nums[i:i+2])
+
+# num1 = True
+# num2 = 6
+# print(num1*num2)
+
+
+# num = {1:2,3:5}
+
+# for i in num :
+#     print(num.get(i))
+#     print(i)
+
+# str = 'klg'
+# x = 'a'
+
+# if x in str:
+#     print('yes')
+
+# else:
+#     print('no')
+
+
+# words1 = ["aaa","aaa","aaa","aaa","aaa","aaa"]
+# words2 = ["aa","a","aaa","aaaa","aaaaa"]
+
+# x = "a"
+
+# result = []
+# for i,j in enumerate(words1):
+#     if x in j:
+#         result.append(i)
+
+# print(result)
+
+
+# words = ["apple", "banana", "cherry"]
+# longest = max(words, key=len)
+
+# print(longest)
+
+nums = [2,4,4,3]
+Output = 3
+
+# majority = max(my_dict,key=my_dict.get)
+# print(majority)
+
+my_dict = {}
+for i in nums:
+    x = nums.count(i)
+    my_dict.update({i:x})
+
+#     key=my_dict.get()
+
+# print(key)
